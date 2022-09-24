@@ -1,5 +1,5 @@
 
-public class Main {
+public class UnitariusTask {
 
     public String[] execute(String[] arr, int m) {
         var leftBlockLength = m;

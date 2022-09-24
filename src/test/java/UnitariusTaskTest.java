@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MainTest {
+public class UnitariusTaskTest {
 
-    private final Main main = new Main();
+    private final UnitariusTask unitariusTask = new UnitariusTask();
     private String[] testedArray;
 
     @BeforeEach
@@ -25,7 +25,7 @@ public class MainTest {
         };
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(expected, actual);
@@ -41,7 +41,7 @@ public class MainTest {
         };
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(expected, actual);
@@ -57,7 +57,7 @@ public class MainTest {
         };
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(expected, actual);
@@ -74,7 +74,7 @@ public class MainTest {
         };
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(expected, actual);
@@ -86,7 +86,7 @@ public class MainTest {
         var m = 22;
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(testedArray, actual);
@@ -98,7 +98,7 @@ public class MainTest {
         var m = 0;
 
         // do
-        var actual = main.execute(testedArray, m);
+        var actual = unitariusTask.execute(testedArray, m);
 
         // assert
         Assertions.assertArrayEquals(testedArray, actual);
